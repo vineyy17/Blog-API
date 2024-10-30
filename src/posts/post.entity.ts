@@ -56,7 +56,7 @@ export class Post {
     length: 1024,
     nullable: true,
   })
-  featuredImage?: string;
+  featuredImageUrl?: string;
 
   @Column({
     type: 'timestamp',
