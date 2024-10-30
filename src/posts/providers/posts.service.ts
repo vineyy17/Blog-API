@@ -42,4 +42,15 @@ export class PostsService {
 
     return posts;
   }
+
+  public async delete(id: number) {
+    // Find the post
+    let post = await this.postsRepository.findOneBy({ id });
+    // Delete the post
+    await this.postsRepository.delete(id);
+    // Delete the meta options
+    await this.metaOptionsRepository.delete(post.metaOptions.id);
+    // Confirmation
+    return { deleted: true, id };
+  }
 }
