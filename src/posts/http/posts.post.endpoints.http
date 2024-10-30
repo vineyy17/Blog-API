@@ -2,9 +2,9 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
-    "title": "Building with React",
+    "title": "Building with Vue",
     "postType": "post",
-    "slug": "building-with-react",
+    "slug": "building-with-vue",
     "status": "draft",
     "content": "React is awesome",
     "schema": "{\r\n    \"@context\": \"https:\/\/schema.org\",\r\n    \"@type\": \"Person\"\r\n  }",
