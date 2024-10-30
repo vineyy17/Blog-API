@@ -75,5 +75,5 @@ export class Post {
   metaOptions?: MetaOption;
 
   // To be worked on later
-  tags?: string;
+  tags?: string[];
 }
