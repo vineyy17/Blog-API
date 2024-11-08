@@ -2,9 +2,9 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
-    "title": "Building with Vue",
+    "title": "Building with React",
     "postType": "post",
-    "slug": "building-with-vue",
+    "slug": "building-with-react",
     "status": "draft",
     "content": "React is awesome",
     "schema": "{\r\n    \"@context\": \"https:\/\/schema.org\",\r\n    \"@type\": \"Person\"\r\n  }",
@@ -13,5 +13,6 @@ Content-Type: application/json
   "metaOptions": 
     {
       "metaValue": "{\"sidebarEnabled\": true, \"footerActive\": true}"
-    }
+    },
+  "authorId": 1
 }
